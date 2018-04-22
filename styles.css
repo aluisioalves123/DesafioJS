@@ -1,0 +1,396 @@
+
+/*==========================================
+Formatações gerais 
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.ver-mais {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 50px 5px;
+  background: black;
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+a:active {
+  background-color: rgba(0,0,0,.5);
+}
+
+a.ver-mais:hover {
+  background: white;
+  color: black;
+}
+
+.resto_dos_titulos {
+ text-align: center; 
+}
+
+hr {
+  display: block;
+  margin: 15px 20px 15px;
+  color: #F2F2F2;
+}
+
+
+/*==========================================
+Formatações do menu de navegação 
+*/
+nav {
+  position: absolute;
+  top: 0px;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+}
+
+ul#navegacao {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 40px 100px 40px 0;
+}
+
+nav img {
+  padding: 40px;
+}
+
+.menu a {
+  font-size: 14pt;
+  color: grey;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+nav ul li { 
+  display: inline;
+  padding-left: 20px;
+}
+
+/*==========================================
+Formatações do cabeçalho 
+*/
+header {
+  background-image: url("https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fbanner.jpg?1522797817548");
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-color: rgba(10,10,10,.5);
+  background-blend-mode: color-burn;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+#header-img {
+  max-width:100%;
+  height: auto;
+  padding: 5px;
+}
+
+header h1 {
+  color: white;
+  font-size: 52px;
+  text-shadow: 2px 2px 2px black;
+  padding-top: 350px;
+  margin-top: 0;
+}
+
+header a {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px 10px;
+  font-size: 30px;
+  margin: 0 5px 0;
+}
+
+/*==========================================
+Formatação gerais das seções
+*/
+
+article {
+  background: white;
+  padding-bottom: 50px;
+}
+
+article p {
+  float: right; 
+}
+
+section {
+  padding: 10px 50px 10px;
+  text-align: center;
+}
+
+section h2 {
+  color: #F16529;
+  font-size: 35px;
+  letter-spacing: 10px;
+  
+}
+
+.ferramentas {
+  width: 23%;
+  float: left;
+  margin: 1%;
+  box-shadow: 1px 1px 4px grey;
+  margin-bottom: 35px;
+}
+
+.ferramentas a {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 8px 10px 8px;
+  border-radius: 10px;
+}
+
+.miniatura {
+  position: relative;
+  background: url("");
+  text-align: center;
+  height: 220px;
+  color: white;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.miniatura p {
+  position: absolute;
+  font-size: 10pt;
+  text-align: left;
+  padding: 10px 20px 10px;
+  letter-spacing: 1px;
+}
+
+.info-topico {
+  display: grid;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.info-topico a {
+  display: block;
+  margin: 10px 30px 10px;
+}
+
+/* ==========================================
+Formatação da seção trainee 
+*/
+section#trainee {
+  text-align: justify;
+  padding-bottom: 0px;
+  margin-right: 70px;
+  overflow: auto;
+}
+
+#computador {
+  float: left;
+  margin-top: 0px;
+  margin-right: 30px;
+}
+
+/*========================================================
+Formatação da seção HTML/CSS/JS
+*/
+
+section#web .ferramentas a {
+  background-color: #FB7C00;
+  border: 1px solid #FB7C00;
+}
+
+section#web .ferramentas a:hover {
+  color: #FB7C00;
+  background-color: white;
+}
+
+div#mini-intro { background-color: #D65B43;}
+div#mini-lista-livros { background-color: #D65B43;}
+div#mini-html-css { background-color: #6CC5EB;}
+div#mini-js { background-color: #F3CA4B;}
+
+/*========================================================
+Formatação da seção Ruby
+*/
+
+section#ruby h2 {
+  color: #A72D3A;
+}
+
+section#ruby .ferramentas a {
+  border: 1px solid #A72D3A;
+  background-color: #A72D3A;
+}
+
+section#ruby .ferramentas a:hover {
+  color: #A72D3A;
+  background-color: white;
+}
+
+div#mini-ruby { background-color: #B21300;}
+div#mini-rails { background-color: #A72D3A;}
+div#mini-heroku { background-color: #8A2BFF;}
+div#mini-gems { background-color: #A72D3A;}
+
+
+/*=========================================
+Outras Formatações
+*/
+img#aa {
+  -webkit-animation:spin 1s linear infinite;
+  -moz-animation:spin 1s linear infinite;
+  animation:spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg);} }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*FORMATAÇÃO DA CAIXA FLUTUANTE*/
+/*=======================================================
+*/
+#alerta {
+	width: 400px;
+	background-color: #eddfdf;
+	border: 1px solid #ccc;
+	margin: 40px auto;
+	cursor: move;
+	position: absolute;
+	left: calc(50% - 200px);
+}
+
+#alerta .title{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #329596;
+	height: 30px;
+	border-bottom: 1px solid #227374;
+	text-transform: uppercase;
+	padding: 10px 10px 0px 0px;
+	text-align: center;
+	color: #073c3d;
+	text-shadow: 1px 1px 1px #6fabac;
+}
+
+#alerta .title i{
+	float: right;
+	padding-top: 3px;
+}
+
+#alerta .body{
+	padding: 10px;
+}
+
+form button{
+	display: block;
+	padding: 4px 11px;
+	border: 1px solid #ffcc00;
+	background-color: #ffcc00 !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#ff6600)) !important;
+	background: -webkit-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -moz-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -ms-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -o-linear-gradient(top, #ffcc00, #ff6600) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600',GradientType=0 );
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #666;
+	cursor:pointer;
+	position: relative;
+	margin: 10px auto;
+}
+
+input[type=text]{   
+    height: 34px;
+    width: 315px;
+    padding: 2px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#alerta .resultado{
+	color: #227210;
+	font-size: 12px;
+}
+
+
+#contador {
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 0px 5px;
+	color: #227210;
+	text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(200,250,255,.4);
+  z-index: 100;
+  font-weight: bold;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+iframe {
+  z-index: 100;
+  width: 100%;
+  height: 500px;
+}
+.spin {
+  -webkit-animation:spin 0.2s linear infinite;
+  -moz-animation:spin 0.2s linear infinite;
+  animation:spin 0.2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg);} }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

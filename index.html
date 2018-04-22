@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <!--CHAMADA DE ESPECIFICAÇÕES DO ESTILO DA CAIXA FLUTUANTE-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+    <!--BIBLIOTECA JQUERY-->
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- BIBLIOTECA JQUERY UI -->
+    <script src="jquery-ui.js"></script>
+    <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+    
+    <!--MEU JS-->
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio trainee 2018.1">
+    <meta name="author" content="GTi Engenharia Jr.">
+    <title>GTi Treinamento - Site do Aluísio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fico.png?1522797799116">
+  </head>
+  <body>
+    
+    <nav>
+      <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Flogo.png?1522797797967">
+      <ul id="navegacao">
+        <li class="menu"><a href="#">Inicio</a></li>
+        <li class="menu"><a href="#">Categorias</a></li>
+        <li class="menu"><a href="#">Blog</a></li>
+        <li class="menu"><a href="#">Membros</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="alerta" hidden="">
+         <div class="title">Receba Nossas Novidades <i class="fa fa-times" onclick="funcao_bem_louca()"> </i></div>
+         <div class="body">
+            <form id="novidadesform" name="contact-form" method="POST">
+               <label>e-mail:</label>
+               <input type="text" name="email" placeholder="digite seu email">
+               <button type="submit">Enviar</button>
+            </form>
+            <div class="resultado"></div>
+         </div>
+      </div>
+      <div id="contador">Alerta aparecendo em: 5</div>
+      <h1>
+        <img id="header-img" src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Ficone-header.png?1522797799380">
+        APRENDA A<br>DESENVOLVER COM A GTi JR.
+      </h1>
+      <a href="#" onclick="contador()">HTML5 + CSS3 + JS</a>
+      <a href="#">Ruby on Rails</a>
+    </header>
+    
+    
+    
+    <article>
+      <section id="trainee">
+        <img id="computador" src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fpcs.png?1522797799541">
+        <h2 id="material">MATERIAL TRAINEE 2018</h2>
+        <div id="texto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt scelerisque lectus, et elementum lacus gravida vitae. Quisque et enim ante. Donec leo purus, tempus eget lacus iaculis, aliquet gravida urna. Pellentesque et convallis dolor, eu sollicitudin urna. Nam egestas elit erat, eu congue nisi malesuada quis. 
+        </div>
+      </section><hr>
+        
+      
+      <section id="web">
+        <h2 class="resto_dos_titulos">HTML 5 | CSS 3 | JAVASCRIPT</h2>
+        <div class="ferramentas">
+          <div id="mini-intro" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fhtml.png?1522797799242"><br>
+            <p>HTML 5 - Introdução <br>Postado por Patrick</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 04/08/2017</p>
+            <a href="#">ESTUDAR AGORA</a>
+          </div> 
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-lista-livros" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fhtml.png?1522797799242"><br>
+            <p>Lista de exercicios <br>Postado por Rayane</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 04/08/2017</p>
+            <a href="#">ESTUDAR AGORA</a> 
+          </div>
+                 
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-html-css" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fhtml-css.png?1522797799679"><br>
+            <p>HTML 5 - Introdução  <br>Postado por Patrick</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 02/04/2017</p>
+            <a href="#">ESTUDAR AGORA</a> 
+          </div>
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-js" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fjs.png?1522797798891"><br>
+            <p>HTML 5 - Introdução <br>Postado por Patrick</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 02/04/2017</p>
+            <a href="#">ESTUDAR AGORA</a>
+          </div>
+        </div>
+        
+        <a class="ver-mais" href="#">VER +</a>
+      </section><hr>
+      
+      
+      <section id="ruby">
+        <h2 class="resto_dos_titulos">Ruby on Rails</h2>
+        
+        <div class="ferramentas">
+          <div id="mini-ruby" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fruby.png?1522797800008"><br>
+            <p>RUBY - Introdução <br>Postado por Lucas Noleto</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 02/04/2017</p>
+            <a href="#">ESTUDAR AGORA</a>
+          </div> 
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-rails" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Frails.png?1522797799835"><br>
+            <p>RAILS 5 - Introdução<br>Postado por Patrick</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 04/08/2017</p>
+            <a href="#">ESTUDAR AGORA</a> 
+          </div>
+                 
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-heroku" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Fheroku.png?1522797798644"><br>
+            <p>Fazendo deploy no Heroku <br>Postado por Eduardo</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 02/04/2017</p>
+            <a href="#">ESTUDAR AGORA</a> 
+          </div>
+        </div>
+        
+        <div class="ferramentas">
+          <div id="mini-gems" class="miniatura">
+            <img src="https://cdn.glitch.com/ae3dc6e7-a56a-4b8d-a6c2-6380127472f4%2Frails.png?1522797799835"><br>
+            <p>RAILS - GEMS importantes <br>Gilvan</p>
+          </div>
+          <div class="info-topico">
+            <p>Postado dia 02/04/2017</p>
+            <a href="#">ESTUDAR AGORA</a>
+          </div>
+        </div>
+        <a class="ver-mais" href="#">VER +</a>
+      </section>
+    </article>
+  </body>
+  <!--<iframe src="https://running-dots.glitch.me/"></iframe>-->
+</html>
